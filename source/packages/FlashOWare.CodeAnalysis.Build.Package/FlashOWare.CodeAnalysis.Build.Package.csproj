@@ -6,7 +6,23 @@
   </PropertyGroup>
 
   <PropertyGroup>
-    <IsPackable>false</IsPackable>
+    <IsPackable>true</IsPackable>
   </PropertyGroup>
+
+  <PropertyGroup>
+    <SuppressDependenciesWhenPacking>true</SuppressDependenciesWhenPacking>
+    <IncludeBuildOutput>false</IncludeBuildOutput>
+    <DevelopmentDependency>true</DevelopmentDependency>
+  </PropertyGroup>
+
+  <PropertyGroup>
+    <PackageId>FlashOWare.CodeAnalysis.Build</PackageId>
+    <Title>FlashOWare.CodeAnalysis.Build</Title>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Include="..\build\FlashOWare.CodeAnalysis.Build.props" Pack="true" PackagePath="build/" />
+    <None Include="..\build\FlashOWare.CodeAnalysis.Build.targets" Pack="true" PackagePath="build/" />
+  </ItemGroup>
 
 </Project>
