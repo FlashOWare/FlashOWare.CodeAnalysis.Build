@@ -20,7 +20,6 @@
   <PropertyGroup>
     <UseArtifactsOutput>true</UseArtifactsOutput>
     <ArtifactsPath>$(MSBuildThisFileDirectory)../artifacts</ArtifactsPath>
-    <ArtifactsPivots>$(ArtifactsPivots)</ArtifactsPivots>
   </PropertyGroup>
 
 </Project>
