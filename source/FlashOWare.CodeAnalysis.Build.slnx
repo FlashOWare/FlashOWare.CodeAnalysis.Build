@@ -1,0 +1,19 @@
+<Solution>
+  <Folder Name="/examples/">
+    <Project Path="examples/FlashOWare.CodeAnalysis.Build.Example.Analyzers/FlashOWare.CodeAnalysis.Build.Example.Analyzers.csproj" />
+    <Project Path="examples/FlashOWare.CodeAnalysis.Build.Example.Generators/FlashOWare.CodeAnalysis.Build.Example.Generators.csproj" />
+    <Project Path="examples/FlashOWare.CodeAnalysis.Build.Example.Package/FlashOWare.CodeAnalysis.Build.Example.Package.csproj" />
+    <Project Path="examples/FlashOWare.CodeAnalysis.Build.Example.Tests/FlashOWare.CodeAnalysis.Build.Example.Tests.csproj" />
+  </Folder>
+  <Folder Name="/packages/">
+    <Project Path="packages/FlashOWare.CodeAnalysis.Build.Package/FlashOWare.CodeAnalysis.Build.Package.csproj" />
+  </Folder>
+  <Folder Name="/packages/build/">
+    <File Path="packages/build/FlashOWare.CodeAnalysis.Build.props" />
+    <File Path="packages/build/FlashOWare.CodeAnalysis.Build.targets" />
+  </Folder>
+  <Folder Name="/tests/">
+    <Project Path="tests/FlashOWare.CodeAnalysis.Build.Testing/FlashOWare.CodeAnalysis.Build.Testing.csproj" />
+    <Project Path="tests/FlashOWare.CodeAnalysis.Build.Tests/FlashOWare.CodeAnalysis.Build.Tests.csproj" />
+  </Folder>
+</Solution>

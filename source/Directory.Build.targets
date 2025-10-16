@@ -1,0 +1,14 @@
+<Project>
+
+  <PropertyGroup Condition="'$(TestProject)' == 'true' Or '$(IsTestProject)' == 'true'">
+    <OutputType Condition="'$(TargetFrameworkIdentifier)' == '.NETFramework'">Library</OutputType>
+    <EnableMSTestRunner>true</EnableMSTestRunner>
+    <TestingPlatformDotnetTestSupport>true</TestingPlatformDotnetTestSupport>
+    <TestingPlatformShowTestsFailure>true</TestingPlatformShowTestsFailure>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(TestProject)' == 'true' Or '$(IsTestProject)' == 'true'">
+    <MSTestAnalysisMode>All</MSTestAnalysisMode>
+  </PropertyGroup>
+
+</Project>
