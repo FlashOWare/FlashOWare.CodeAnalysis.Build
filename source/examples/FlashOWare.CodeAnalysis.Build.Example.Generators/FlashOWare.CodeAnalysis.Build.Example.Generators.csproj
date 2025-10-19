@@ -3,10 +3,19 @@
   <PropertyGroup>
     <OutputType>Library</OutputType>
     <TargetFrameworks>net9.0;netstandard2.0</TargetFrameworks>
+    <RootNamespace>FlashOWare.CodeAnalysis.Build.Example</RootNamespace>
   </PropertyGroup>
 
   <PropertyGroup>
     <IsPackable>false</IsPackable>
   </PropertyGroup>
+
+  <PropertyGroup>
+    <IsRoslynComponent>true</IsRoslynComponent>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.CodeAnalysis.CSharp" />
+  </ItemGroup>
 
 </Project>
