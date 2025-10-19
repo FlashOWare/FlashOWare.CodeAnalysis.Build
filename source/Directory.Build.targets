@@ -1,8 +1,11 @@
 <Project>
 
+  <PropertyGroup Condition="'$(IsRoslynComponent)' == 'true'">
+    <EnforceExtendedAnalyzerRules>true</EnforceExtendedAnalyzerRules>
+  </PropertyGroup>
+
   <PropertyGroup Condition="'$(TestProject)' == 'true' Or '$(IsTestProject)' == 'true'">
-    <OutputType Condition="'$(TargetFrameworkIdentifier)' == '.NETFramework'">Library</OutputType>
-    <EnableMSTestRunner>true</EnableMSTestRunner>
+    <EnableMSTestRunner>false</EnableMSTestRunner>
     <TestingPlatformDotnetTestSupport>true</TestingPlatformDotnetTestSupport>
     <TestingPlatformShowTestsFailure>true</TestingPlatformShowTestsFailure>
   </PropertyGroup>

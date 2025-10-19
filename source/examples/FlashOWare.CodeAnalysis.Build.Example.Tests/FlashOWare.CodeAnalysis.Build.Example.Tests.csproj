@@ -1,7 +1,7 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <OutputType>Exe</OutputType>
+    <OutputType>Library</OutputType>
     <TargetFrameworks>net9.0;net472</TargetFrameworks>
   </PropertyGroup>
 
@@ -10,6 +10,14 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\FlashOWare.CodeAnalysis.Build.Example.Analyzers\FlashOWare.CodeAnalysis.Build.Example.Analyzers.csproj" />
+    <ProjectReference Include="..\FlashOWare.CodeAnalysis.Build.Example.Generators\FlashOWare.CodeAnalysis.Build.Example.Generators.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.CodeAnalysis" />
+    <PackageReference Include="Microsoft.CodeAnalysis.CSharp.Analyzer.Testing" />
+    <PackageReference Include="Microsoft.CodeAnalysis.CSharp.SourceGenerators.Testing" />
     <PackageReference Include="Microsoft.NET.Test.Sdk" />
     <PackageReference Include="Microsoft.Testing.Extensions.CodeCoverage" />
     <PackageReference Include="Microsoft.Testing.Extensions.TrxReport" />
